@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrowPixel Digital | Websites, Social Media Marketing, Facebook Ads & Google Business — Faisalabad & Pakistan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            obsidian: '#05070b',
+            emeraldNeon: '#00f59b',
+            cyanNeon: '#00d2ff',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { --accent: #00f59b; --accent-2: #00d2ff; --bg: #05070b; }
+    * { box-sizing: border-box; }
+    ::selection { background: #00f59b; color: #05070b; }
+    html, body {
+      margin: 0; padding: 0;
+      background-color: var(--bg);
+      color: #f3f4f6;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    .text-balance { text-wrap: balance; }
+    #bg-webgl {
+      position: fixed; top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      z-index: 0; pointer-events: none;
+    }
+    .readability-vignette {
+      position: fixed; inset: 0; z-index: 1; pointer-events: none;
+      background: radial-gradient(circle at 25% 50%, rgba(5,7,11,0.75) 0%, rgba(5,7,11,0.38) 55%, rgba(5,7,11,0.65) 100%);
+    }
+    .glass-card {
+      background: rgba(11, 15, 25, 0.74);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+      transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .glass-card:hover {
+      border-color: rgba(0, 245, 155, 0.45);
+      box-shadow: 0 24px 60px rgba(0, 245, 155, 0.1);
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #ffffff 0%, #00f59b 48%, #00d2ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .btn-neon {
+      background: linear-gradient(135deg, #00f59b, #00d2ff);
+      color: #05070b; font-weight: 700;
+      transition: all 0.25s ease;
+      box-shadow: 0 0 24px rgba(0, 245, 155, 0.28);
+    }
+    .btn-neon:hover {
+      box-shadow: 0 0 38px rgba(0, 245, 155, 0.6);
+      transform: translateY(-2px);
+    }
+    @keyframes spinOrbit { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @keyframes spinOrbitReverse { 0% { transform: rotate(360deg); } 100% { transform: rotate(0deg); } }
+    .orbit-ring { animation: spinOrbit 9s linear infinite; }
+    .orbit-ring-reverse { animation: spinOrbitReverse 6s linear infinite; }
+    #scroll-progress {
+      position: fixed; top: 0; left: 0; height: 3px;
+      background: linear-gradient(90deg, #00f59b, #00d2ff, #4285F4);
+      width: 0%; z-index: 9999;
+    }
+    .cyber-map-iframe { filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(95%); }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #05070b; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00f59b; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <div id="scroll-progress"></div>
+  <canvas id="bg-webgl"></canvas>
+  <div class="readability-vignette"></div>
+
+  <!-- Floating WhatsApp Button (Bottom Right) -->
+  <a href="https://wa.me/923157523498?text=Hi%20Adil!%20I%20visited%20the%20GrowPixel%20website%20and%20want%20to%20discuss%20growing%20my%20business." target="_blank" rel="noopener" class="fixed bottom-5 right-5 z-40 flex items-center gap-2.5 px-5 py-3.5 rounded-full btn-neon text-xs sm:text-sm shadow-2xl">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/></svg>
+    <span>WhatsApp: 0315-7523498</span>
+  </a>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 px-4 sm:px-8 py-3.5">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-7 py-3 rounded-2xl glass-card border border-white/10">
+      <a href="#hero" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emeraldNeon to-cyanNeon flex items-center justify-center text-obsidian font-display font-black text-xl shadow-lg">GP</div>
+        <div>
+          <span class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-white">GROW<span class="text-emeraldNeon">PIXEL</span></span>
+          <span class="block text-[10px] font-mono text-gray-400 -mt-0.5">FAISALABAD • PAKISTAN</span>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-300">
+        <a href="#services" class="hover:text-emeraldNeon transition-colors">Our Services</a>
+        <a href="#portfolio" class="hover:text-emeraldNeon transition-colors">Portfolio & Templates</a>
+        <a href="#why-us" class="hover:text-emeraldNeon transition-colors">Why GrowPixel</a>
+        <a href="#pricing" class="hover:text-emeraldNeon transition-colors">Pricing (PKR)</a>
+        <a href="#location" class="hover:text-emeraldNeon transition-colors">Location & Contact</a>
+      </div>
+
+      <div class="flex items-center gap-2.5">
+        <a href="https://www.linkedin.com/in/adil-saleem-profile/" target="_blank" rel="noopener" title="Adil Saleem on LinkedIn" class="p-2.5 rounded-xl bg-white/5 hover:bg-white/15 text-gray-300 hover:text-white border border-white/10 transition-colors">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </a>
+        <a href="#estimator" class="px-4 sm:px-5 py-2.5 rounded-xl btn-neon text-xs sm:text-sm">Get Free Audit</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="relative z-10">
+
+    <!-- ==========================================
+         SECTION 1: HERO (100% CUSTOMER-FOCUSED)
+         ========================================== -->
+    <section id="hero" class="min-h-screen flex items-center pt-28 pb-16 px-4 sm:px-8">
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-left">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full glass-card border border-emeraldNeon/30 text-xs font-mono text-emeraldNeon">
+            <span class="w-2 h-2 rounded-full bg-emeraldNeon animate-ping"></span>
+            <span>DIGITAL MARKETING & WEB AGENCY • FAISALABAD & ALL PAKISTAN</span>
+          </div>
+
+          <h1 class="font-display font-extrabold text-4xl sm:text-5xl xl:text-6xl leading-[1.12] tracking-tight text-white text-balance">
+            We Help Local Pakistani Businesses Get More <span class="text-gradient">Customers, Calls & Online Sales.</span>
+          </h1>
+
+          <p class="text-gray-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+            Whether you run a restaurant, clinic, clothing brand, retail shop, or export mill in <strong class="text-white">Faisalabad</strong> or anywhere across <strong class="text-white">Pakistan</strong>—we build your website, rank you on Google Maps, run profitable Facebook & Instagram ads, and create content that sells.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#portfolio" class="px-7 py-4 rounded-2xl btn-neon text-sm sm:text-base flex items-center gap-2.5">
+              <span>View Our Work & Templates</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <a href="#pricing" class="px-6 py-4 rounded-2xl glass-card text-white hover:text-emeraldNeon text-sm sm:text-base font-semibold transition-colors">
+              View Launch Packages (PKR)
+            </a>
+          </div>
+
+          <div class="pt-5 border-t border-white/10 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs font-mono text-gray-300">
+            <div>FOUNDER: <strong class="text-white">ADIL SALEEM</strong></div>
+            <a href="https://wa.me/923157523498" target="_blank" class="hover:text-emeraldNeon">📞 0315-7523498</a>
+            <a href="mailto:adisaleem2017@gmail.com" class="hover:text-emeraldNeon">✉️ adisaleem2017@gmail.com</a>
+            <a href="https://www.linkedin.com/in/adil-saleem-profile/" target="_blank" class="text-cyanNeon hover:underline">LinkedIn Profile ↗</a>
+          </div>
+        </div>
+
+        <!-- Right Card: Customer Value Proposition -->
+        <div class="lg:col-span-5">
+          <div class="glass-card rounded-3xl p-6 sm:p-8 border border-white/15 space-y-5 text-left">
+            <div class="flex items-center justify-between border-b border-white/10 pb-3.5">
+              <span class="text-xs font-mono text-emeraldNeon font-semibold">HOW WE GROW YOUR BUSINESS</span>
+              <span class="px-2.5 py-0.5 rounded bg-emeraldNeon/15 text-emeraldNeon font-mono text-[11px]">RESULTS FIRST</span>
+            </div>
+
+            <div class="space-y-3.5 text-sm">
+              <div class="p-3.5 rounded-2xl bg-white/5 border border-white/5 flex items-start gap-3.5">
+                <span class="w-7 h-7 rounded-lg bg-blue-500/20 text-blue-400 font-display font-bold flex items-center justify-center shrink-0">G</span>
+                <div>
+                  <div class="font-bold text-white">Show Up #1 on Google Maps</div>
+                  <div class="text-xs text-gray-400 mt-0.5">Customers searching near D-Ground, Kohinoor, or your city find and call you first.</div>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-2xl bg-white/5 border border-white/5 flex items-start gap-3.5">
+                <span class="w-7 h-7 rounded-lg bg-cyanNeon/20 text-cyanNeon font-display font-bold flex items-center justify-center shrink-0">f</span>
+                <div>
+                  <div class="font-bold text-white">Daily Leads from Facebook & Instagram</div>
+                  <div class="text-xs text-gray-400 mt-0.5">Targeted ad campaigns that send real buyers straight to your WhatsApp or store.</div>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-2xl bg-white/5 border border-white/5 flex items-start gap-3.5">
+                <span class="w-7 h-7 rounded-lg bg-emeraldNeon/20 text-emeraldNeon font-mono font-bold text-xs flex items-center justify-center shrink-0">&lt;/&gt;</span>
+                <div>
+                  <div class="font-bold text-white">High-Converting Website & Content</div>
+                  <div class="text-xs text-gray-400 mt-0.5">Fast mobile websites, COD online stores, and professional Reels that build instant trust.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: SERVICES (SILENTLY TRIGGERS 3D SWIRLS IN BACKGROUND)
+         ========================================== -->
+    <section id="services" class="py-24 px-4 sm:px-8 relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div class="max-w-2xl space-y-3 text-left">
+            <div class="text-xs font-mono text-emeraldNeon uppercase tracking-widest">// 01 — What We Do For You</div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white leading-tight text-balance">
+              Complete Digital Growth Under <span class="text-gradient">One Roof.</span>
+            </h2>
+          </div>
+          <p class="text-gray-400 text-sm sm:text-base max-w-md text-left">
+            You focus on running your business—we handle your website, Google ranking, daily social media content, and paid advertising.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 items-stretch">
+          
+          <!-- SERVICE 1: GOOGLE BUSINESS PROFILE -->
+          <div onmouseenter="triggerServiceSwirl('google')" onclick="triggerServiceSwirl('google')" class="glass-card rounded-3xl p-7 sm:p-9 flex flex-col justify-between group border border-white/10 hover:border-blue-400/60 transition-all">
+            <div class="space-y-5 text-left">
+              <div class="flex items-center justify-between">
+                <div class="relative w-16 h-16 flex items-center justify-center">
+                  <div class="absolute inset-0 rounded-full border-2 border-dashed border-blue-400/60 orbit-ring"></div>
+                  <div class="absolute inset-1.5 rounded-full border border-emeraldNeon/50 orbit-ring-reverse"></div>
+                  <div class="w-11 h-11 rounded-full bg-blue-500/20 flex items-center justify-center font-display font-black text-2xl text-blue-400">G</div>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-mono bg-blue-500/15 text-blue-300 border border-blue-500/30">LOCAL SEO & MAPS</span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-white group-hover:text-blue-300 transition-colors">Google Business Profile & Maps Ranking</h3>
+              <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                When customers in Faisalabad or across Pakistan search <em class="text-white">"Best clinic near me"</em>, <em class="text-white">"Restaurant in D-Ground"</em>, or <em class="text-white">"Textile supplier Faisalabad"</em>, we make sure your business shows up at the top of Google Maps with glowing reviews and direct call buttons.
+              </p>
+            </div>
+            <div class="pt-5 mt-5 border-t border-white/10 grid grid-cols-2 gap-2 text-xs font-mono text-gray-300 text-left">
+              <div><span class="text-blue-400">✓</span> Profile Verification & Setup</div>
+              <div><span class="text-blue-400">✓</span> Top-3 Google Map Pack SEO</div>
+              <div><span class="text-blue-400">✓</span> Customer Review Growth</div>
+              <div><span class="text-blue-400">✓</span> Weekly Photo & Offer Updates</div>
+            </div>
+          </div>
+
+          <!-- SERVICE 2: FACEBOOK & INSTAGRAM MARKETING -->
+          <div onmouseenter="triggerServiceSwirl('facebook')" onclick="triggerServiceSwirl('facebook')" class="glass-card rounded-3xl p-7 sm:p-9 flex flex-col justify-between group border border-white/10 hover:border-cyanNeon/60 transition-all">
+            <div class="space-y-5 text-left">
+              <div class="flex items-center justify-between">
+                <div class="relative w-16 h-16 flex items-center justify-center">
+                  <div class="absolute inset-0 rounded-full border-2 border-dashed border-cyanNeon/60 orbit-ring"></div>
+                  <div class="absolute inset-1.5 rounded-full border border-blue-500/50 orbit-ring-reverse"></div>
+                  <div class="w-11 h-11 rounded-full bg-cyanNeon/20 flex items-center justify-center font-display font-black text-2xl text-cyanNeon">f</div>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-mono bg-cyanNeon/15 text-cyanNeon border border-cyanNeon/30">PAID SOCIAL ADS</span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-white group-hover:text-cyanNeon transition-colors">Facebook, Instagram & TikTok Ads Management</h3>
+              <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                Stop wasting money on random "Boost Posts". We run targeted <strong class="text-white">Meta Ads Manager campaigns and WhatsApp lead funnels</strong> that put your offers directly in front of paying customers in Faisalabad, Lahore, Karachi, Islamabad, or abroad.
+              </p>
+            </div>
+            <div class="pt-5 mt-5 border-t border-white/10 grid grid-cols-2 gap-2 text-xs font-mono text-gray-300 text-left">
+              <div><span class="text-cyanNeon">✓</span> Targeted Sales & Lead Ads</div>
+              <div><span class="text-cyanNeon">✓</span> Direct WhatsApp Inquiry Ads</div>
+              <div><span class="text-cyanNeon">✓</span> Meta Pixel & Retargeting</div>
+              <div><span class="text-cyanNeon">✓</span> Full Account Management</div>
+            </div>
+          </div>
+
+          <!-- SERVICE 3: CONTENT CREATION & REELS -->
+          <div onmouseenter="triggerServiceSwirl('content')" onclick="triggerServiceSwirl('content')" class="glass-card rounded-3xl p-7 sm:p-9 flex flex-col justify-between group border border-white/10 hover:border-purple-400/60 transition-all">
+            <div class="space-y-5 text-left">
+              <div class="flex items-center justify-between">
+                <div class="relative w-16 h-16 flex items-center justify-center">
+                  <div class="absolute inset-0 rounded-full border-2 border-dashed border-purple-400/60 orbit-ring"></div>
+                  <div class="absolute inset-1.5 rounded-full border border-pink-500/50 orbit-ring-reverse"></div>
+                  <div class="w-11 h-11 rounded-full bg-purple-500/20 flex items-center justify-center font-display font-black text-xl text-purple-300 pl-0.5">▶</div>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-mono bg-purple-500/15 text-purple-300 border border-purple-500/30">CONTENT & REELS</span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-white group-hover:text-purple-300 transition-colors">Social Media Content Creation & Reels</h3>
+              <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                Keep your pages active and professional. We design eye-catching posts, edit engaging <strong class="text-white">Instagram & TikTok Reels</strong>, offer <strong class="text-white">on-location shoots in Faisalabad</strong>, and build complete brand identities that make customers trust you.
+              </p>
+            </div>
+            <div class="pt-5 mt-5 border-t border-white/10 grid grid-cols-2 gap-2 text-xs font-mono text-gray-300 text-left">
+              <div><span class="text-purple-400">✓</span> Instagram & TikTok Reels</div>
+              <div><span class="text-purple-400">✓</span> Branded Posts & Stories</div>
+              <div><span class="text-purple-400">✓</span> On-Site Shoots (Faisalabad)</div>
+              <div><span class="text-purple-400">✓</span> Logos, Menus & Catalogs</div>
+            </div>
+          </div>
+
+          <!-- SERVICE 4: WEBSITES & E-COMMERCE -->
+          <div onmouseenter="triggerServiceSwirl('web')" onclick="triggerServiceSwirl('web')" class="glass-card rounded-3xl p-7 sm:p-9 flex flex-col justify-between group border border-white/10 hover:border-emeraldNeon/60 transition-all">
+            <div class="space-y-5 text-left">
+              <div class="flex items-center justify-between">
+                <div class="relative w-16 h-16 flex items-center justify-center">
+                  <div class="absolute inset-0 rounded-full border-2 border-dashed border-emeraldNeon/60 orbit-ring"></div>
+                  <div class="absolute inset-1.5 rounded-full border border-cyanNeon/50 orbit-ring-reverse"></div>
+                  <div class="w-11 h-11 rounded-full bg-emeraldNeon/20 flex items-center justify-center font-mono font-bold text-base text-emeraldNeon">&lt;/&gt;</div>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-mono bg-emeraldNeon/15 text-emeraldNeon border border-emeraldNeon/30">WEBSITES & STORES</span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-white group-hover:text-emeraldNeon transition-colors">Business Websites & Cash-on-Delivery Online Stores</h3>
+              <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                From professional company websites and appointment portals to full <strong class="text-white">E-Commerce stores</strong> integrated with TCS, Leopards, PostEx, JazzCash, and one-click WhatsApp ordering—we build fast websites that work smoothly on every phone.
+              </p>
+            </div>
+            <div class="pt-5 mt-5 border-t border-white/10 grid grid-cols-2 gap-2 text-xs font-mono text-gray-300 text-left">
+              <div><span class="text-emeraldNeon">✓</span> Company & Service Websites</div>
+              <div><span class="text-emeraldNeon">✓</span> Shopify & WooCommerce COD</div>
+              <div><span class="text-emeraldNeon">✓</span> Textile Export Catalogs</div>
+              <div><span class="text-emeraldNeon">✓</span> Direct WhatsApp Ordering</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: PORTFOLIO & PAKISTANI BUSINESS TEMPLATES
+         ========================================== -->
+    <section id="portfolio" class="py-24 px-4 sm:px-8 relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div class="max-w-2xl space-y-3 text-left">
+            <div class="text-xs font-mono text-cyanNeon uppercase tracking-widest">// 02 — Portfolio & Industry Designs</div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white leading-tight text-balance">
+              Explore Our <span class="text-gradient">Live Projects</span> & Ready Business Designs.
+            </h2>
+            <p class="text-gray-400 text-sm sm:text-base">
+              Visit our live deployed websites or pick one of our industry-tailored designs ready to be customized with your logo, photos, and products in days.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <button onclick="filterPortfolio('all')" id="tab-all" class="px-4 py-2.5 rounded-xl text-xs font-mono bg-emeraldNeon text-obsidian font-bold transition-all">All Showcases (6)</button>
+            <button onclick="filterPortfolio('live')" id="tab-live" class="px-4 py-2.5 rounded-xl text-xs font-mono glass-card text-gray-300 hover:text-white transition-all">Live Websites (2)</button>
+            <button onclick="filterPortfolio('template')" id="tab-template" class="px-4 py-2.5 rounded-xl text-xs font-mono glass-card text-gray-300 hover:text-white transition-all">Business Templates (4)</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+
+          <!-- LIVE WEBSITE 1: GROWPIXEL (WITH VISIT BUTTON) -->
+          <div data-category="live" class="portfolio-item glass-card rounded-3xl overflow-hidden flex flex-col justify-between border-2 border-emeraldNeon/50">
+            <div>
+              <div class="relative h-52 bg-gradient-to-br from-[#06121e] via-[#0a2336] to-[#041019] p-5 flex flex-col justify-between">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded-md bg-emeraldNeon text-obsidian font-mono font-bold text-[10px]">● LIVE WEBSITE</span>
+                  <span class="text-xs font-mono text-gray-300">growpixel.vercel.app</span>
+                </div>
+                <div class="my-auto p-4 rounded-xl bg-obsidian/85 border border-white/15 text-left">
+                  <div class="text-[10px] font-mono text-emeraldNeon">GROWPIXEL DIGITAL</div>
+                  <div class="font-display font-extrabold text-lg text-white mt-0.5">Agency Web Portal</div>
+                </div>
+              </div>
+              <div class="p-6 space-y-2.5 text-left">
+                <div class="text-xs font-mono text-emeraldNeon">FEATURED LIVE PROJECT #01</div>
+                <h3 class="font-display font-bold text-2xl text-white">GrowPixel — Digital Agency Site</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                  Clean, modern digital agency portal built for fast mobile browsing, clear service breakdown, and instant client inquiries.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://growpixel.vercel.app/" target="_blank" rel="noopener" class="w-full py-3.5 px-5 rounded-xl btn-neon text-sm flex items-center justify-center gap-2">
+                <span>Visit Website ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- LIVE WEBSITE 2: BOYAZ + TLC FAISALABAD (WITH VISIT BUTTON) -->
+          <div data-category="live" class="portfolio-item glass-card rounded-3xl overflow-hidden flex flex-col justify-between border-2 border-cyanNeon/50">
+            <div>
+              <div class="relative h-52 bg-gradient-to-br from-[#1b1438] via-[#261d4a] to-[#0f172a] p-5 flex flex-col justify-between">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded-md bg-cyanNeon text-obsidian font-mono font-bold text-[10px]">● LIVE WEB APP</span>
+                  <span class="text-xs font-mono text-gray-300">boyaz.vercel.app</span>
+                </div>
+                <div class="my-auto p-4 rounded-xl bg-obsidian/85 border border-white/15 text-left">
+                  <div class="text-[10px] font-mono text-cyanNeon">INTERACTIVE PORTAL & TLC FAISALABAD</div>
+                  <div class="font-display font-extrabold text-lg text-white mt-0.5">Boyaz Web App & School Hub</div>
+                </div>
+              </div>
+              <div class="p-6 space-y-2.5 text-left">
+                <div class="text-xs font-mono text-cyanNeon">FEATURED LIVE PROJECT #02</div>
+                <h3 class="font-display font-bold text-2xl text-white">Boyaz Portal & TLC School Gallery</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                  Custom interactive web portal featuring 24 playable browser games, live community tools, and a social media feed showcase for <strong class="text-white">The Learning Circle (TLC) School, Faisalabad</strong>.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://boyaz.vercel.app/" target="_blank" rel="noopener" class="w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-cyanNeon to-blue-500 text-obsidian font-bold text-sm flex items-center justify-center gap-2 hover:opacity-95 transition-opacity">
+                <span>Visit Website ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- PAKISTANI TEMPLATE 1: D-GROUND KARAHI & BBQ RESTAURANT (NO VISIT BUTTON) -->
+          <div data-category="template" class="portfolio-item glass-card rounded-3xl overflow-hidden flex flex-col justify-between border border-white/10">
+            <div>
+              <div class="relative h-52 overflow-hidden bg-obsidian">
+                <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=80" alt="Pakistani Biryani & Karahi Restaurant Website Design" class="w-full h-full object-cover opacity-80" />
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent"></div>
+                <div class="absolute top-3 left-3 right-3 flex justify-between">
+                  <span class="px-2.5 py-1 rounded bg-amber-500 text-obsidian font-mono font-bold text-[10px]">RESTAURANT DESIGN</span>
+                  <span class="px-2.5 py-1 rounded bg-black/75 text-amber-300 font-mono text-[10px]">D-Ground FSD</span>
+                </div>
+                <div class="absolute bottom-3 left-3 right-3 p-2.5 rounded-xl bg-obsidian/90 border border-amber-500/30 flex justify-between items-center">
+                  <span class="text-xs font-bold text-white">Royal D-Ground Karahi & BBQ</span>
+                  <span class="text-[10px] font-mono text-emeraldNeon">Direct Ordering</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-2.5 text-left">
+                <div class="text-xs font-mono text-amber-400">READY DESIGN // RESTAURANTS & CAFES</div>
+                <h3 class="font-display font-bold text-xl text-white">Pakistani Restaurant & Fast Food Ordering Website</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                  Complete menu & online ordering website for restaurants, BBQ spots, and cafes with direct WhatsApp delivery orders and table reservations.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-white/5 flex justify-between text-xs font-mono text-gray-400">
+              <span>READY FOR YOUR BRAND</span>
+              <span class="text-emeraldNeon">PKR 28,000 PACKAGE</span>
+            </div>
+          </div>
+
+          <!-- PAKISTANI TEMPLATE 2: FAISALABAD TEXTILE EXPORTER (NO VISIT BUTTON) -->
+          <div data-category="template" class="portfolio-item glass-card rounded-3xl overflow-hidden flex flex-col justify-between border border-white/10">
+            <div>
+              <div class="relative h-52 overflow-hidden bg-obsidian">
+                <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80" alt="Faisalabad Textile Mill Website Design" class="w-full h-full object-cover opacity-80" />
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent"></div>
+                <div class="absolute top-3 left-3 right-3 flex justify-between">
+                  <span class="px-2.5 py-1 rounded bg-emeraldNeon text-obsidian font-mono font-bold text-[10px]">TEXTILE & EXPORT</span>
+                  <span class="px-2.5 py-1 rounded bg-black/75 text-emeraldNeon font-mono text-[10px]">Industrial Hub FSD</span>
+                </div>
+                <div class="absolute bottom-3 left-3 right-3 p-2.5 rounded-xl bg-obsidian/90 border border-emeraldNeon/30 flex justify-between items-center">
+                  <span class="text-xs font-bold text-white">Chenab Home Textiles & Mills</span>
+                  <span class="text-[10px] font-mono text-cyanNeon">Export Catalog</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-2.5 text-left">
+                <div class="text-xs font-mono text-emeraldNeon">READY DESIGN // TEXTILE & MANUFACTURING</div>
+                <h3 class="font-display font-bold text-xl text-white">Faisalabad Textile Mill & B2B Exporter Website</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                  Built for Faisalabad textile manufacturers, hosiery mills, and exporters to showcase product lines, certifications, and capture international buyer inquiries.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-white/5 flex justify-between text-xs font-mono text-gray-400">
+              <span>READY FOR YOUR BRAND</span>
+              <span class="text-emeraldNeon">B2B EXPORT READY</span>
+            </div>
+          </div>
+
+          <!-- PAKISTANI TEMPLATE 3: PAKISTANI LAWN & BRIDAL PRET STORE (NO VISIT BUTTON) -->
+          <div data-category="template" class="portfolio-item glass-card rounded-3xl overflow-hidden flex flex-col justify-between border border-white/10">
+            <div>
+              <div class="relative h-52 overflow-hidden bg-obsidian">
+                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80" alt="Pakistani Eastern Zari & Lawn Embroidery Store Design" class="w-full h-full object-cover opacity-85" />
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent"></div>
+                <div class="absolute top-3 left-3 right-3 flex justify-between">
+                  <span class="px-2.5 py-1 rounded bg-purple-400 text-obsidian font-mono font-bold text-[10px]">CLOTHING STORE</span>
+                  <span class="px-2.5 py-1 rounded bg-black/75 text-purple-300 font-mono text-[10px]">Nationwide COD</span>
+                </div>
+                <div class="absolute bottom-3 left-3 right-3 p-2.5 rounded-xl bg-obsidian/90 border border-purple-400/30 flex justify-between items-center">
+                  <span class="text-xs font-bold text-white">Zari & Noor — Festive Lawn '26</span>
+                  <span class="text-[10px] font-mono text-purple-300">Unstitched & Pret</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-2.5 text-left">
+                <div class="text-xs font-mono text-purple-400">READY DESIGN // CLOTHING & BOUTIQUES</div>
+                <h3 class="font-display font-bold text-xl text-white">Pakistani Lawn, Kurta & Bridal Online Store</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                  Complete Cash-on-Delivery online shopping store for Pakistani clothing brands, eastern wear, menswear kurta, and fashion boutiques.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-white/5 flex justify-between text-xs font-mono text-gray-400">
+              <span>READY FOR YOUR BRAND</span>
+              <span class="text-purple-400">COD INTEGRATED</span>
+            </div>
+          </div>
+
+          <!-- PAKISTANI TEMPLATE 4: KOHINOOR CLINIC & SERVICE PORTAL (NO VISIT BUTTON) -->
+          <div data-category="template" class="portfolio-item glass-card rounded-3xl overflow-hidden flex flex-col justify-between border border-white/10">
+            <div>
+              <div class="relative h-52 overflow-hidden bg-obsidian">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Faisalabad Clinic & Aesthetics Website Design" class="w-full h-full object-cover opacity-80" />
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent"></div>
+                <div class="absolute top-3 left-3 right-3 flex justify-between">
+                  <span class="px-2.5 py-1 rounded bg-cyanNeon text-obsidian font-mono font-bold text-[10px]">CLINIC & SERVICE</span>
+                  <span class="px-2.5 py-1 rounded bg-black/75 text-cyanNeon font-mono text-[10px]">Kohinoor City FSD</span>
+                </div>
+                <div class="absolute bottom-3 left-3 right-3 p-2.5 rounded-xl bg-obsidian/90 border border-cyanNeon/30 flex justify-between items-center">
+                  <span class="text-xs font-bold text-white">Kohinoor Dental & Aesthetics</span>
+                  <span class="text-[10px] font-mono text-cyanNeon">Appointments</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-2.5 text-left">
+                <div class="text-xs font-mono text-cyanNeon">READY DESIGN // CLINICS, SALONS & SERVICES</div>
+                <h3 class="font-display font-bold text-xl text-white">Medical Clinic, Salon & Service Booking Website</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                  High-trust appointment booking & local service website designed for doctors, clinics, salons, solar companies, and real estate agencies.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 py-4 border-t border-white/5 flex justify-between text-xs font-mono text-gray-400">
+              <span>READY FOR YOUR BRAND</span>
+              <span class="text-cyanNeon">GOOGLE MAPS READY</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4: WHY GROWPIXEL (SILENTLY POWERED BY THE 3D DEPTH-MAP SHADER)
+         ========================================== -->
+    <section id="why-us" class="py-24 px-4 sm:px-8 relative">
+      <div class="max-w-7xl mx-auto space-y-10">
+
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div class="max-w-2xl space-y-3 text-left">
+            <div class="text-xs font-mono text-emeraldNeon uppercase tracking-widest">// 03 — The GrowPixel Difference</div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white leading-tight text-balance">
+              Why Local Businesses in Faisalabad & Pakistan <span class="text-gradient">Trust Us.</span>
+            </h2>
+            <p class="text-gray-400 text-sm sm:text-base">
+              We don't just hand you a website and disappear. We partner with you to bring real phone calls, walk-in customers, and WhatsApp orders every single week.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <button onclick="loadDepthCase(0)" id="case-btn-0" class="px-4 py-2.5 rounded-xl text-xs font-mono bg-emeraldNeon text-obsidian font-bold transition-all">01. Manufacturing & Export</button>
+            <button onclick="loadDepthCase(1)" id="case-btn-1" class="px-4 py-2.5 rounded-xl text-xs font-mono glass-card text-gray-300 hover:text-white transition-all">02. Restaurants & Retail</button>
+            <button onclick="loadDepthCase(2)" id="case-btn-2" class="px-4 py-2.5 rounded-xl text-xs font-mono glass-card text-gray-300 hover:text-white transition-all">03. Clothing & E-Commerce</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <!-- Interactive Visual Showcase (Silently powered by our 3D Depth-Map Parallax Shader!) -->
+          <div class="lg:col-span-7 glass-card rounded-3xl p-3 border border-white/15 flex flex-col">
+            <div id="depth-canvas-wrapper" class="relative w-full h-[320px] sm:h-[380px] rounded-2xl overflow-hidden bg-obsidian">
+              <canvas id="depth-webgl" class="w-full h-full block"></canvas>
+            </div>
+          </div>
+
+          <!-- Business Benefits Breakdown -->
+          <div class="lg:col-span-5 glass-card rounded-3xl p-7 sm:p-8 flex flex-col justify-between space-y-6 text-left">
+            <div class="space-y-4">
+              <div class="inline-flex px-3 py-1 rounded bg-emeraldNeon/15 text-emeraldNeon font-mono text-xs" id="depth-case-title">INDUSTRY FOCUS // FAISALABAD & PAKISTAN</div>
+              <h3 id="depth-case-heading" class="font-display font-bold text-2xl sm:text-3xl text-white">Built to Win You More Customers</h3>
+              <p id="depth-case-desc" class="text-sm sm:text-base text-gray-300 leading-relaxed">
+                Most businesses lose 70% of potential customers because their social media looks inactive, they don't appear on Google Maps, or they lack a proper website. We fix all three in your first 14 days.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-white/10">
+              <div class="p-3.5 rounded-2xl bg-white/5">
+                <div class="font-display font-extrabold text-2xl text-emeraldNeon">7 Days</div>
+                <div class="text-xs text-gray-400 mt-0.5">Fast website & Google Maps launch</div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white/5">
+                <div class="font-display font-extrabold text-2xl text-cyanNeon">1-on-1</div>
+                <div class="text-xs text-gray-400 mt-0.5">Direct WhatsApp support with Adil Saleem</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5: LAUNCH PRICING (PKR)
+         ========================================== -->
+    <section id="pricing" class="py-24 px-4 sm:px-8 relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <div class="max-w-3xl space-y-3 text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emeraldNeon/15 border border-emeraldNeon/30 text-emeraldNeon font-mono text-xs">
+            🔥 SPECIAL LAUNCH PRICING — 35% TO 45% LOWER THAN STANDARD AGENCY RATES
+          </div>
+          <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white leading-tight text-balance">
+            Affordable Pricing Built for <span class="text-gradient">Pakistani Businesses.</span>
+          </h2>
+          <p class="text-gray-400 text-base">
+            We checked what agencies across Faisalabad, Lahore, and Karachi charge—and priced our services significantly lower so local businesses can get premium results without overpaying.
+          </p>
+        </div>
+
+        <!-- Individual Services Comparison -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="glass-card p-5 rounded-2xl border border-white/10 text-left">
+            <div class="text-xs font-mono text-blue-400">GOOGLE BUSINESS PROFILE</div>
+            <div class="text-xs text-gray-400 mt-1">Other Agencies: <span class="line-through">PKR 25,000</span></div>
+            <div class="font-display font-extrabold text-2xl text-white mt-1">PKR 12,000 <span class="text-xs font-normal text-emeraldNeon">One-Time</span></div>
+            <p class="text-xs text-gray-400 mt-2">Complete setup, verification help & local Google Maps SEO ranking.</p>
+          </div>
+          <div class="glass-card p-5 rounded-2xl border border-white/10 text-left">
+            <div class="text-xs font-mono text-cyanNeon">FACEBOOK & INSTA ADS</div>
+            <div class="text-xs text-gray-400 mt-1">Other Agencies: <span class="line-through">PKR 45,000/mo</span></div>
+            <div class="font-display font-extrabold text-2xl text-white mt-1">PKR 22,000 <span class="text-xs font-normal text-cyanNeon">/ month</span></div>
+            <p class="text-xs text-gray-400 mt-2">Targeted lead & sales campaigns, pixel tracking & WhatsApp ad funnels.</p>
+          </div>
+          <div class="glass-card p-5 rounded-2xl border border-white/10 text-left">
+            <div class="text-xs font-mono text-purple-400">CONTENT & REELS CREATION</div>
+            <div class="text-xs text-gray-400 mt-1">Other Agencies: <span class="line-through">PKR 40,000/mo</span></div>
+            <div class="font-display font-extrabold text-2xl text-white mt-1">PKR 20,000 <span class="text-xs font-normal text-purple-300">/ month</span></div>
+            <p class="text-xs text-gray-400 mt-2">12 custom designed social posts + 4 edited Instagram/TikTok Reels.</p>
+          </div>
+          <div class="glass-card p-5 rounded-2xl border border-white/10 text-left">
+            <div class="text-xs font-mono text-emeraldNeon">BUSINESS WEBSITE</div>
+            <div class="text-xs text-gray-400 mt-1">Other Agencies: <span class="line-through">PKR 55,000</span></div>
+            <div class="font-display font-extrabold text-2xl text-white mt-1">PKR 28,000 <span class="text-xs font-normal text-emeraldNeon">One-Time</span></div>
+            <p class="text-xs text-gray-400 mt-2">Mobile-friendly 5-page website with WhatsApp chat & Google Map.</p>
+          </div>
+        </div>
+
+        <!-- 3 Main All-In-One Bundles -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+          <div class="glass-card rounded-3xl p-8 flex flex-col justify-between border border-white/10 text-left">
+            <div class="space-y-4">
+              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-white/10 text-gray-200">01. Business Starter</span>
+              <h3 class="font-display font-bold text-2xl text-white">Website + Google Maps Pack</h3>
+              <div>
+                <div class="text-xs text-gray-400 font-mono">Market Price: <span class="line-through text-red-400">PKR 55,000</span></div>
+                <div class="font-display font-extrabold text-4xl text-white">PKR 28,000 <span class="text-xs font-normal text-gray-400">/ one-time</span></div>
+              </div>
+              <ul class="space-y-2.5 text-sm text-gray-300 pt-3 border-t border-white/10">
+                <li><span class="text-emeraldNeon">✓</span> Professional 5-Page Business Website</li>
+                <li><span class="text-emeraldNeon">✓</span> <strong class="text-white">FREE</strong> Google Business Profile Setup & SEO</li>
+                <li><span class="text-emeraldNeon">✓</span> Direct WhatsApp Chat & Inquiry Form</li>
+                <li><span class="text-emeraldNeon">✓</span> Facebook & Instagram Page Makeover</li>
+              </ul>
+            </div>
+            <a href="#estimator" onclick="selectPresetPackage('Website + Google Maps Pack (PKR 28,000)')" class="mt-7 w-full py-3.5 rounded-xl bg-white/10 hover:bg-emeraldNeon hover:text-obsidian text-center font-bold text-sm transition-all">Select PKR 28,000 Package</a>
+          </div>
+
+          <div class="glass-card rounded-3xl p-8 flex flex-col justify-between border-2 border-emeraldNeon relative transform lg:-translate-y-3 text-left">
+            <div class="absolute -top-3.5 left-6 px-4 py-1 rounded-full bg-gradient-to-r from-emeraldNeon to-cyanNeon text-obsidian font-mono font-bold text-xs">MOST POPULAR FOR BRANDS</div>
+            <div class="space-y-4">
+              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-emeraldNeon/20 text-emeraldNeon">02. Monthly Social & Ads</span>
+              <h3 class="font-display font-bold text-2xl text-white">Social Media, Reels & Ads Suite</h3>
+              <div>
+                <div class="text-xs text-gray-400 font-mono">Market Price: <span class="line-through text-red-400">PKR 75,000/mo</span></div>
+                <div class="font-display font-extrabold text-4xl text-white">PKR 35,000 <span class="text-xs font-normal text-gray-400">/ month</span></div>
+              </div>
+              <ul class="space-y-2.5 text-sm text-gray-200 pt-3 border-t border-white/10">
+                <li><span class="text-emeraldNeon">✓</span> Complete Facebook & Instagram Management</li>
+                <li><span class="text-emeraldNeon">✓</span> 12 Custom Posts + 4 Edited Viral Reels</li>
+                <li><span class="text-emeraldNeon">✓</span> Paid Ads Campaigns for Leads & Orders</li>
+                <li><span class="text-emeraldNeon">✓</span> Google Business Profile Weekly Posts</li>
+              </ul>
+            </div>
+            <a href="#estimator" onclick="selectPresetPackage('Social Media, Reels & Ads Suite (PKR 35,000/mo)')" class="mt-7 w-full py-4 rounded-xl btn-neon text-center font-bold text-sm">Select PKR 35,000 Growth Suite</a>
+          </div>
+
+          <div class="glass-card rounded-3xl p-8 flex flex-col justify-between border border-white/10 text-left">
+            <div class="space-y-4">
+              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-cyanNeon/20 text-cyanNeon">03. Complete Store + Marketing</span>
+              <h3 class="font-display font-bold text-2xl text-white">E-Commerce Store & Full Launch</h3>
+              <div>
+                <div class="text-xs text-gray-400 font-mono">Market Price: <span class="line-through text-red-400">PKR 115,000</span></div>
+                <div class="font-display font-extrabold text-4xl text-white">PKR 58,000 <span class="text-xs font-normal text-gray-400">/ package</span></div>
+              </div>
+              <ul class="space-y-2.5 text-sm text-gray-300 pt-3 border-t border-white/10">
+                <li><span class="text-cyanNeon">✓</span> Full Online Store with COD & WhatsApp Orders</li>
+                <li><span class="text-cyanNeon">✓</span> Facebook, Instagram & TikTok Sales Ads Setup</li>
+                <li><span class="text-cyanNeon">✓</span> 12 Product Posts + 4 Promotional Reels</li>
+                <li><span class="text-cyanNeon">✓</span> Google Maps Ranking & Priority Support</li>
+              </ul>
+            </div>
+            <a href="#estimator" onclick="selectPresetPackage('E-Commerce Store & Full Launch (PKR 58,000)')" class="mt-7 w-full py-3.5 rounded-xl bg-white/10 hover:bg-cyanNeon hover:text-obsidian text-center font-bold text-sm transition-all">Select PKR 58,000 Full Launch</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 6: D-GROUND FAISALABAD MAP & CONTACT
+         ========================================== -->
+    <section id="location" class="py-24 px-4 sm:px-8 relative">
+      <div class="max-w-7xl mx-auto space-y-10">
+
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div class="space-y-2 text-left">
+            <div class="text-xs font-mono text-emeraldNeon uppercase tracking-widest">// 05 — Local Office & Contact</div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white">
+              Based in <span class="text-gradient">D-Ground, Faisalabad.</span>
+            </h2>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="setMapView('cyber')" id="map-btn-cyber" class="px-4 py-2.5 rounded-xl text-xs font-mono bg-emeraldNeon text-obsidian font-bold transition-all">Standard Map View</button>
+            <button onclick="setMapView('satellite')" id="map-btn-sat" class="px-4 py-2.5 rounded-xl text-xs font-mono glass-card text-gray-300 hover:text-white transition-all">Satellite View</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          <div class="lg:col-span-8 glass-card rounded-3xl p-3 border border-white/15 relative overflow-hidden">
+            <iframe
+              id="faisalabad-map-iframe"
+              class="w-full h-[370px] sm:h-[410px] rounded-2xl cyber-map-iframe"
+              src="https://maps.google.com/maps?q=D%20Ground%20Peoples%20Colony%20No%201%20Faisalabad%20Pakistan&t=m&z=15&ie=UTF8&iwloc=&output=embed"
+              loading="lazy">
+            </iframe>
+            <div class="absolute bottom-6 left-6 glass-card px-4 py-3 rounded-2xl border border-emeraldNeon/40 flex items-center gap-3 pointer-events-none">
+              <span class="w-3 h-3 rounded-full bg-emeraldNeon animate-ping"></span>
+              <div class="text-left">
+                <div class="text-xs font-mono text-emeraldNeon font-bold">D-GROUND, FAISALABAD</div>
+                <div class="text-[11px] text-gray-300">Peoples Colony No. 1, Faisalabad, Pakistan</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 glass-card rounded-3xl p-7 flex flex-col justify-between space-y-5 text-left">
+            <div class="space-y-4">
+              <div class="inline-flex px-3 py-1 rounded bg-emeraldNeon/15 text-emeraldNeon font-mono text-xs">GET IN TOUCH</div>
+              <h3 class="font-display font-bold text-2xl text-white">Talk Directly With Adil Saleem</h3>
+              <p class="text-sm text-gray-300">Available for meetings in Faisalabad or phone/WhatsApp consultations anywhere in Pakistan.</p>
+              <div class="space-y-3 pt-1">
+                <a href="https://wa.me/923157523498" target="_blank" class="flex items-center gap-3 p-3.5 rounded-2xl bg-white/5 hover:bg-emeraldNeon/15 border border-white/10">
+                  <span class="text-emeraldNeon font-bold font-mono">WA</span>
+                  <div>
+                    <div class="text-[10px] font-mono text-gray-400">WHATSAPP</div>
+                    <div class="text-sm font-bold text-white">0315-7523498</div>
+                  </div>
+                </a>
+                <a href="mailto:adisaleem2017@gmail.com" class="flex items-center gap-3 p-3.5 rounded-2xl bg-white/5 hover:bg-cyanNeon/15 border border-white/10">
+                  <span class="text-cyanNeon font-bold font-mono">@</span>
+                  <div>
+                    <div class="text-[10px] font-mono text-gray-400">EMAIL</div>
+                    <div class="text-sm font-bold text-white">adisaleem2017@gmail.com</div>
+                  </div>
+                </a>
+                <a href="https://www.linkedin.com/in/adil-saleem-profile/" target="_blank" class="flex items-center gap-3 p-3.5 rounded-2xl bg-white/5 hover:bg-blue-500/15 border border-white/10">
+                  <span class="text-blue-400 font-bold font-mono">in</span>
+                  <div>
+                    <div class="text-[10px] font-mono text-gray-400">LINKEDIN</div>
+                    <div class="text-sm font-bold text-white">Adil Saleem ↗</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-emeraldNeon/10 border border-emeraldNeon/25 text-xs text-gray-200">
+              📍 D-Ground, Peoples Colony No. 1, Faisalabad
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 7: WHATSAPP LEAD GENERATOR
+         ========================================== -->
+    <section id="estimator" class="py-20 px-4 sm:px-8 relative">
+      <div class="max-w-4xl mx-auto glass-card rounded-3xl p-8 sm:p-11 border border-emeraldNeon/35 space-y-7 text-left">
+        <div class="space-y-2">
+          <div class="text-xs font-mono text-emeraldNeon uppercase tracking-widest">// 06 — Start Your Project</div>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white">Get a Free Quote on <span class="text-gradient">WhatsApp</span></h2>
+          <p class="text-gray-400 text-sm">Select the services your business needs below and message us directly.</p>
+        </div>
+
+        <form onsubmit="sendToWhatsApp(event)" class="space-y-5">
+          <div class="flex flex-wrap gap-2" id="service-pills">
+            <button type="button" onclick="toggleServicePill(this)" data-service="Business Website (PKR 28k)" class="service-pill px-4 py-2 rounded-xl text-xs font-mono border border-emeraldNeon bg-emeraldNeon/20 text-emeraldNeon font-bold">✓ Business Website</button>
+            <button type="button" onclick="toggleServicePill(this)" data-service="Google Business Profile (PKR 12k)" class="service-pill px-4 py-2 rounded-xl text-xs font-mono border border-emeraldNeon bg-emeraldNeon/20 text-emeraldNeon font-bold">✓ Google Business Profile</button>
+            <button type="button" onclick="toggleServicePill(this)" data-service="Facebook & Insta Ads (PKR 22k/mo)" class="service-pill px-4 py-2 rounded-xl text-xs font-mono border border-white/15 bg-white/5 text-gray-300">+ Facebook & Insta Ads</button>
+            <button type="button" onclick="toggleServicePill(this)" data-service="Content & Reels Creation (PKR 20k/mo)" class="service-pill px-4 py-2 rounded-xl text-xs font-mono border border-white/15 bg-white/5 text-gray-300">+ Content & Reels Creation</button>
+            <button type="button" onclick="toggleServicePill(this)" data-service="E-Commerce Online Store" class="service-pill px-4 py-2 rounded-xl text-xs font-mono border border-white/15 bg-white/5 text-gray-300">+ E-Commerce Online Store</button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" id="client-name" required placeholder="Your Name *" class="w-full px-4 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm" />
+            <input type="text" id="client-city" required placeholder="Business Name & City (e.g. Faisalabad) *" class="w-full px-4 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <select id="client-budget" class="w-full px-4 py-3.5 rounded-xl bg-obsidian border border-white/10 text-white text-sm">
+              <option value="PKR 12,000 - 28,000">PKR 12,000 – 28,000</option>
+              <option value="PKR 28,000 - 45,000" selected>PKR 28,000 – 45,000</option>
+              <option value="PKR 45,000 - 75,000+">PKR 45,000 – 75,000+</option>
+            </select>
+            <input type="text" id="client-notes" placeholder="Any details about your business..." class="w-full px-4 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm" />
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-2xl btn-neon text-base">Send Inquiry on WhatsApp (0315-7523498)</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-10 px-4 sm:px-8 border-t border-white/10 text-xs text-gray-400 font-mono">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div><strong class="text-white">GROWPIXEL DIGITAL</strong> — D-GROUND, FAISALABAD, PAKISTAN 🇵🇰</div>
+        <div class="flex flex-wrap gap-5">
+          <a href="https://growpixel.vercel.app/" target="_blank" class="hover:text-emeraldNeon">growpixel.vercel.app ↗</a>
+          <a href="https://boyaz.vercel.app/" target="_blank" class="hover:text-cyanNeon">boyaz.vercel.app ↗</a>
+          <a href="https://www.linkedin.com/in/adil-saleem-profile/" target="_blank" class="hover:text-blue-400">LinkedIn ↗</a>
+          <a href="mailto:adisaleem2017@gmail.com" class="hover:text-white">adisaleem2017@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- THREE.JS & GSAP (RUNS SILENTLY IN BACKGROUND) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    window.addEventListener('scroll', () => {
+      const s = document.documentElement.scrollTop;
+      const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      document.getElementById('scroll-progress').style.width = ((s / h) * 100) + '%';
+    });
+
+    /* =========================================================================
+       1. SILENT BACKGROUND 3D MORPHING CORE + SWIRLING SERVICE EMBLEMS
+       ========================================================================= */
+    const bgCanvas = document.getElementById('bg-webgl');
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x05070b, 0.08);
+
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+    camera.position.set(0, 0, 5.4);
+
+    const renderer = new THREE.WebGLRenderer({ canvas: bgCanvas, antialias: true, alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    scene.add(new THREE.AmbientLight(0xffffff, 0.7));
+    const pLight1 = new THREE.PointLight(0x00f59b, 4, 20); pLight1.position.set(4, 3, 4); scene.add(pLight1);
+    const pLight2 = new THREE.PointLight(0x00d2ff, 4, 20); pLight2.position.set(-4, -3, 3); scene.add(pLight2);
+
+    const mainGroup = new THREE.Group();
+    mainGroup.position.x = window.innerWidth > 1024 ? 1.25 : 0;
+    scene.add(mainGroup);
+
+    // 3D Morphing Mesh
+    const SEG = 110;
+    const baseGeo = new THREE.PlaneGeometry(4, 4, SEG, SEG);
+    const posAttr = baseGeo.attributes.position;
+    const vCount = posAttr.count;
+
+    const tTorus = new Float32Array(vCount * 3);
+    const tTerrain = new Float32Array(vCount * 3);
+    const tSpire = new Float32Array(vCount * 3);
+
+    for (let i = 0; i < vCount; i++) {
+      const ix = i * 3;
+      const u = (posAttr.getX(i) + 2) / 4;
+      const v = (posAttr.getY(i) + 2) / 4;
+      const theta = u * Math.PI * 2;
+      const phi = v * Math.PI;
+
+      const r0 = 1.48 + 0.2 * Math.sin(5 * theta) * Math.cos(4 * phi);
+      posAttr.setXYZ(i, r0 * Math.sin(phi) * Math.cos(theta), r0 * Math.cos(phi), r0 * Math.sin(phi) * Math.sin(theta));
+
+      const p = 2, q = 3, tkPhi = v * Math.PI * 2;
+      const r1 = 1.15 + 0.45 * Math.cos(q * theta);
+      tTorus[ix]     = r1 * Math.cos(p * theta) + 0.26 * Math.cos(p * theta) * Math.cos(tkPhi);
+      tTorus[ix + 1] = r1 * Math.sin(p * theta) + 0.26 * Math.sin(p * theta) * Math.cos(tkPhi);
+      tTorus[ix + 2] = -0.5 * Math.sin(q * theta) + 0.26 * Math.sin(tkPhi);
+
+      const tx = (u - 0.5) * 4.8, tz = (v - 0.5) * 3.5;
+      tTerrain[ix] = tx;
+      tTerrain[ix + 1] = 0.5 * Math.sin(tx * 1.8) * Math.cos(tz * 1.8) - 0.2;
+      tTerrain[ix + 2] = tz;
+
+      const rad = v * 2.2;
+      const rz = 0.35 * Math.cos(8 * theta) * Math.sin(v * Math.PI) + 1.25 * Math.exp(-3 * rad * rad) - 0.3;
+      tSpire[ix] = rad * Math.cos(theta);
+      tSpire[ix + 1] = rad * Math.sin(theta) * 0.65 - rz * 0.4;
+      tSpire[ix + 2] = rz * 0.8;
+    }
+
+    baseGeo.computeVertexNormals();
+    baseGeo.morphAttributes.position = [
+      new THREE.BufferAttribute(tTorus, 3),
+      new THREE.BufferAttribute(tTerrain, 3),
+      new THREE.BufferAttribute(tSpire, 3)
+    ];
+
+    const solidMat = new THREE.MeshStandardMaterial({
+      color: 0x0b101b, roughness: 0.25, metalness: 0.85,
+      side: THREE.DoubleSide, morphTargets: true, transparent: true, opacity: 0.9
+    });
+    const solidMesh = new THREE.Mesh(baseGeo, solidMat);
+    mainGroup.add(solidMesh);
+
+    const wireMat = new THREE.MeshBasicMaterial({
+      color: 0x00f59b, wireframe: true, transparent: true, opacity: 0.2, morphTargets: true
+    });
+    const wireMesh = new THREE.Mesh(baseGeo, wireMat);
+    wireMesh.scale.setScalar(1.005);
+    mainGroup.add(wireMesh);
+
+    const morphState = { t1: 0, t2: 0, t3: 0 };
+    function syncMorph() {
+      solidMesh.morphTargetInfluences[0] = wireMesh.morphTargetInfluences[0] = morphState.t1;
+      solidMesh.morphTargetInfluences[1] = wireMesh.morphTargetInfluences[1] = morphState.t2;
+      solidMesh.morphTargetInfluences[2] = wireMesh.morphTargetInfluences[2] = morphState.t3;
+    }
+
+    // Swirling Service Emblem Particles ('G', 'f', '▶', '</>')
+    const P_COUNT = 6500;
+    const GLYPH_COUNT = 4500;
+
+    function createEmblemCoords(drawFn) {
+      const c = document.createElement('canvas');
+      c.width = 256; c.height = 256;
+      const ctx = c.getContext('2d');
+      ctx.fillStyle = '#000'; ctx.fillRect(0, 0, 256, 256);
+      ctx.fillStyle = '#fff'; ctx.strokeStyle = '#fff';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      drawFn(ctx);
+
+      const data = ctx.getImageData(0, 0, 256, 256).data;
+      const pts = [];
+      for (let y = 0; y < 256; y += 2) {
+        for (let x = 0; x < 256; x += 2) {
+          if (data[(y * 256 + x) * 4] > 128) {
+            pts.push({ x: (x / 256 - 0.5) * 3.0, y: -(y / 256 - 0.5) * 3.0 });
+          }
+        }
+      }
+
+      const arr = new Float32Array(P_COUNT * 3);
+      for (let i = 0; i < P_COUNT; i++) {
+        const ix = i * 3;
+        if (i < GLYPH_COUNT && pts.length > 0) {
+          const p = pts[i % pts.length];
+          arr[ix] = p.x + (Math.random() - 0.5) * 0.04;
+          arr[ix + 1] = p.y + (Math.random() - 0.5) * 0.04;
+          arr[ix + 2] = (Math.random() - 0.5) * 0.35;
+        } else {
+          const ring = i % 3;
+          const ang = (i / (P_COUNT - GLYPH_COUNT)) * Math.PI * 14;
+          const rad = 1.85 + ring * 0.22;
+          const tilt = (ring - 1) * 0.45;
+          arr[ix] = rad * Math.cos(ang);
+          arr[ix + 1] = rad * Math.sin(ang) * Math.cos(tilt);
+          arr[ix + 2] = rad * Math.sin(ang) * Math.sin(tilt);
+        }
+      }
+      return arr;
+    }
+
+    const posHalo = new Float32Array(P_COUNT * 3);
+    for (let i = 0; i < P_COUNT; i++) {
+      const ix = i * 3;
+      const ang = i * 0.15;
+      const rad = 1.9 + (i % 5) * 0.18;
+      posHalo[ix] = rad * Math.cos(ang);
+      posHalo[ix + 1] = (Math.random() - 0.5) * 2.6;
+      posHalo[ix + 2] = rad * Math.sin(ang);
+    }
+
+    const posG = createEmblemCoords(ctx => { ctx.font = '900 185px sans-serif'; ctx.fillText('G', 128, 132); });
+    const posF = createEmblemCoords(ctx => { ctx.font = '900 195px sans-serif'; ctx.fillText('f', 128, 136); });
+    const posPlay = createEmblemCoords(ctx => {
+      ctx.lineWidth = 14; ctx.strokeRect(48, 58, 160, 140);
+      ctx.beginPath(); ctx.moveTo(105, 92); ctx.lineTo(165, 128); ctx.lineTo(105, 164); ctx.closePath(); ctx.fill();
+    });
+    const posCode = createEmblemCoords(ctx => { ctx.font = '800 110px monospace'; ctx.fillText('</>', 128, 130); });
+
+    const pGeo = new THREE.BufferGeometry();
+    const curP = new Float32Array(posHalo);
+    pGeo.setAttribute('position', new THREE.BufferAttribute(curP, 3));
+
+    const pMat = new THREE.PointsMaterial({
+      color: 0x00f59b, size: 0.038, transparent: true, opacity: 0.85, blending: THREE.AdditiveBlending
+    });
+    const pMesh = new THREE.Points(pGeo, pMat);
+    mainGroup.add(pMesh);
+
+    let targetP = posHalo;
+    let swirlBoost = { val: 0 };
+
+    const emblemMap = {
+      core:     { pts: posHalo, color: 0x00f59b, showMesh: true },
+      google:   { pts: posG,    color: 0x4285F4, showMesh: false },
+      facebook: { pts: posF,    color: 0x00d2ff, showMesh: false },
+      content:  { pts: posPlay, color: 0xa855f7, showMesh: false },
+      web:      { pts: posCode, color: 0x00f59b, showMesh: false }
+    };
+
+    window.triggerServiceSwirl = function(key) {
+      const cfg = emblemMap[key] || emblemMap.core;
+      targetP = cfg.pts;
+      const c = new THREE.Color(cfg.color);
+      gsap.to(pMat.color, { r: c.r, g: c.g, b: c.b, duration: 0.6 });
+      gsap.to(wireMat, { opacity: cfg.showMesh ? 0.22 : 0.04, duration: 0.5 });
+      gsap.to(solidMat, { opacity: cfg.showMesh ? 0.92 : 0.15, duration: 0.5 });
+      gsap.fromTo(swirlBoost, { val: 1.0 }, { val: 0.0, duration: 1.2, ease: 'power3.out' });
+    };
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: '#services', start: 'top 80%', end: 'top 25%', scrub: 1,
+        onEnter: () => triggerServiceSwirl('google'),
+        onLeaveBack: () => triggerServiceSwirl('core')
+      }
+    }).to(morphState, { t1: 1, t2: 0, t3: 0, onUpdate: syncMorph });
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: '#why-us', start: 'top 80%', end: 'top 25%', scrub: 1,
+        onEnter: () => triggerServiceSwirl('core')
+      }
+    }).to(morphState, { t1: 0, t2: 1, t3: 0, onUpdate: syncMorph });
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: '#location', start: 'top 80%', end: 'top 25%', scrub: 1,
+        onEnter: () => triggerServiceSwirl('core')
+      }
+    }).to(morphState, { t1: 0, t2: 0, t3: 1, onUpdate: syncMorph });
+
+    let mX = 0, mY = 0;
+    window.addEventListener('mousemove', (e) => {
+      mX = (e.clientX / window.innerWidth - 0.5) * 2;
+      mY = (e.clientY / window.innerHeight - 0.5) * 2;
+    });
+
+    const clock = new THREE.Clock();
+    function animateMain3D() {
+      const t = clock.getElapsedTime();
+      const arr = pGeo.attributes.position.array;
+      const sw = swirlBoost.val;
+
+      for (let i = 0; i < P_COUNT; i++) {
+        const ix = i * 3;
+        const tx = targetP[ix], ty = targetP[ix + 1], tz = targetP[ix + 2];
+        if (i >= GLYPH_COUNT) {
+          const cs = Math.cos(t * 0.7), sn = Math.sin(t * 0.7);
+          arr[ix]     += (tx * cs - ty * sn - arr[ix]) * 0.09;
+          arr[ix + 1] += (tx * sn + ty * cs - arr[ix + 1]) * 0.09;
+          arr[ix + 2] += (tz - arr[ix + 2]) * 0.09;
+        } else {
+          const vortex = sw * Math.sin(i * 0.05 + t * 8) * 0.5;
+          arr[ix]     += (tx + vortex - arr[ix]) * 0.12;
+          arr[ix + 1] += (ty + vortex - arr[ix + 1]) * 0.12;
+          arr[ix + 2] += (tz - arr[ix + 2]) * 0.12;
+        }
+      }
+      pGeo.attributes.position.needsUpdate = true;
+
+      solidMesh.rotation.y = wireMesh.rotation.y = t * 0.22 + mX * 0.35;
+      solidMesh.rotation.x = wireMesh.rotation.x = Math.sin(t * 0.3) * 0.15 + mY * 0.25;
+      pMesh.rotation.y = Math.sin(t * 0.4) * 0.2 + mX * 0.3;
+      pMesh.rotation.x = mY * 0.2;
+
+      renderer.render(scene, camera);
+      requestAnimationFrame(animateMain3D);
+    }
+    animateMain3D();
+
+    /* =========================================================================
+       2. SILENT 3D DEPTH-MAP PARALLAX SHOWCASE BANNER
+       ========================================================================= */
+    const depthCanvas = document.getElementById('depth-webgl');
+    const depthWrapper = document.getElementById('depth-canvas-wrapper');
+    const depthScene = new THREE.Scene();
+    const depthCamera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+    const depthRenderer = new THREE.WebGLRenderer({ canvas: depthCanvas, antialias: true });
+
+    function resizeDepth() {
+      const r = depthWrapper.getBoundingClientRect();
+      depthRenderer.setSize(r.width, r.height);
+    }
+    resizeDepth();
+
+    const caseMeta = [
+      { title: 'INDUSTRY FOCUS // MANUFACTURING & EXPORTERS', heading: 'Helping Faisalabad Mills & Exporters Win Buyers', desc: 'We build high-trust digital catalogs, company websites, and international outreach funnels for Faisalabad manufacturers and textile exporters.', c1: '#00f59b', c2: '#00d2ff', tag: 'FAISALABAD INDUSTRIAL & EXPORT GROWTH' },
+      { title: 'INDUSTRY FOCUS // RESTAURANTS & LOCAL RETAIL', heading: 'More Walk-Ins & Direct Orders in Faisalabad', desc: 'We combine Google Maps #1 ranking, mouth-watering Reels, and local Facebook Ads to pack restaurants, clinics, and shops around D-Ground and Kohinoor.', c1: '#f59e0b', c2: '#ef4444', tag: 'D-GROUND & KOHINOOR LOCAL DOMINANCE' },
+      { title: 'INDUSTRY FOCUS // CLOTHING & E-COMMERCE', heading: 'Scaling Pakistani Brands With Cash-on-Delivery', desc: 'From Shopify/WooCommerce stores to profitable Meta & TikTok ad campaigns, we help Pakistani clothing and consumer brands get daily orders.', c1: '#a855f7', c2: '#00d2ff', tag: 'NATIONWIDE E-COMMERCE & SOCIAL SALES' }
+    ];
+
+    function buildDepthTextures(idx) {
+      const w = 800, h = 500;
+      const rgbC = document.createElement('canvas'); rgbC.width = w; rgbC.height = h;
+      const ctx = rgbC.getContext('2d');
+      const depC = document.createElement('canvas'); depC.width = w; depC.height = h;
+      const dtx = depC.getContext('2d');
+      const m = caseMeta[idx];
+
+      ctx.fillStyle = '#070b14'; ctx.fillRect(0, 0, w, h);
+      dtx.fillStyle = '#181818'; dtx.fillRect(0, 0, w, h);
+
+      ctx.strokeStyle = m.c2; ctx.lineWidth = 16;
+      ctx.beginPath(); ctx.arc(w / 2, h / 2, 165, 0, Math.PI * 2); ctx.stroke();
+      dtx.strokeStyle = '#7a7a7a'; dtx.lineWidth = 22;
+      dtx.beginPath(); dtx.arc(w / 2, h / 2, 165, 0, Math.PI * 2); dtx.stroke();
+
+      const g = ctx.createRadialGradient(w * 0.48, h * 0.45, 10, w / 2, h / 2, 110);
+      g.addColorStop(0, '#fff'); g.addColorStop(0.4, m.c1); g.addColorStop(1, '#05070b');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(w / 2, h / 2, 105, 0, Math.PI * 2); ctx.fill();
+
+      const dg = dtx.createRadialGradient(w / 2, h / 2, 10, w / 2, h / 2, 110);
+      dg.addColorStop(0, '#ffffff'); dg.addColorStop(1, '#444444');
+      dtx.fillStyle = dg; dtx.beginPath(); dtx.arc(w / 2, h / 2, 110, 0, Math.PI * 2); dtx.fill();
+
+      ctx.fillStyle = '#05070b'; ctx.strokeStyle = m.c1; ctx.lineWidth = 2;
+      ctx.fillRect(w / 2 - 195, h / 2 + 70, 390, 44); ctx.strokeRect(w / 2 - 195, h / 2 + 70, 390, 44);
+      ctx.fillStyle = '#fff'; ctx.font = '700 13px monospace'; ctx.textAlign = 'center';
+      ctx.fillText(m.tag, w / 2, h / 2 + 97);
+
+      dtx.fillStyle = '#ffffff'; dtx.fillRect(w / 2 - 195, h / 2 + 70, 390, 44);
+
+      return { rgb: new THREE.CanvasTexture(rgbC), depth: new THREE.CanvasTexture(depC) };
+    }
+
+    const initPair = buildDepthTextures(0);
+    const depthUniforms = {
+      uImage: { value: initPair.rgb },
+      uDepth: { value: initPair.depth },
+      uMouse: { value: new THREE.Vector2(0, 0) },
+      uStrength: { value: 0.065 }
+    };
+
+    const depthMat = new THREE.ShaderMaterial({
+      uniforms: depthUniforms,
+      vertexShader: `varying vec2 vUv; void main() { vUv = uv; gl_Position = vec4(position, 1.0); }`,
+      fragmentShader: `
+        uniform sampler2D uImage; uniform sampler2D uDepth;
+        uniform vec2 uMouse; uniform float uStrength;
+        varying vec2 vUv;
+        void main() {
+          float d = texture2D(uDepth, vUv).r;
+          vec2 p = uMouse * (d - 0.35) * uStrength;
+          vec2 uv2 = clamp(vUv + p, 0.002, 0.998);
+          float r = texture2D(uImage, uv2 + p * 0.08).r;
+          float g = texture2D(uImage, uv2).g;
+          float b = texture2D(uImage, uv2 - p * 0.08).b;
+          gl_FragColor = vec4(r, g, b, 1.0);
+        }
+      `
+    });
+    depthScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), depthMat));
+
+    let dMX = 0, dMY = 0;
+    depthWrapper.addEventListener('mousemove', (e) => {
+      const r = depthWrapper.getBoundingClientRect();
+      dMX = ((e.clientX - r.left) / r.width - 0.5) * 2;
+      dMY = -((e.clientY - r.top) / r.height - 0.5) * 2;
+    });
+    depthWrapper.addEventListener('mouseleave', () => { dMX = 0; dMY = 0; });
+
+    function animateDepth() {
+      const t = clock.getElapsedTime();
+      const tx = dMX !== 0 ? dMX : Math.sin(t * 1.5) * 0.25;
+      const ty = dMY !== 0 ? dMY : Math.cos(t * 1.2) * 0.25;
+      depthUniforms.uMouse.value.x += (tx - depthUniforms.uMouse.value.x) * 0.1;
+      depthUniforms.uMouse.value.y += (ty - depthUniforms.uMouse.value.y) * 0.1;
+      depthRenderer.render(depthScene, depthCamera);
+      requestAnimationFrame(animateDepth);
+    }
+    animateDepth();
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      mainGroup.position.x = window.innerWidth > 1024 ? 1.25 : 0;
+      resizeDepth();
+    });
+
+    /* =========================================================================
+       3. UI INTERACTIONS & WHATSAPP SENDER
+       ========================================================================= */
+    window.loadDepthCase = function(idx) {
+      const pair = buildDepthTextures(idx);
+      depthUniforms.uImage.value = pair.rgb;
+      depthUniforms.uDepth.value = pair.depth;
+      document.getElementById('depth-case-title').textContent = caseMeta[idx].title;
+      document.getElementById('depth-case-heading').textContent = caseMeta[idx].heading;
+      document.getElementById('depth-case-desc').textContent = caseMeta[idx].desc;
+      [0, 1, 2].forEach(i => {
+        document.getElementById('case-btn-' + i).className = (i === idx)
+          ? 'px-4 py-2.5 rounded-xl text-xs font-mono bg-emeraldNeon text-obsidian font-bold transition-all'
+          : 'px-4 py-2.5 rounded-xl text-xs font-mono glass-card text-gray-300 hover:text-white transition-all';
+      });
+    };
+
+    window.filterPortfolio = function(cat) {
+      document.querySelectorAll('.portfolio-item').forEach(el => {
+        el.style.display = (cat === 'all' || el.dataset.category === cat) ? 'flex' : 'none';
+      });
+      ['all', 'live', 'template'].forEach(t => {
+        document.getElementById('tab-' + t).className = (t === cat)
+          ? 'px-4 py-2.5 rounded-xl text-xs font-mono bg-emeraldNeon text-obsidian font-bold transition-all'
+          : 'px-4 py-2.5 rounded-xl text-xs font-mono glass-card text-gray-300 hover:text-white transition-all';
+      });
+    };
+
+    window.setMapView = function(mode) {
+      const iframe = document.getElementById('faisalabad-map-iframe');
+      const bCyber = document.getElementById('map-btn-cyber');
+      const bSat = document.getElementById('map-btn-sat');
+      if (mode === 'satellite') {
+        iframe.src = 'https://maps.google.com/maps?q=D%20Ground%20Peoples%20Colony%20No%201%20Faisalabad%20Pakistan&t=k&z=16&ie=UTF8&iwloc=&output=embed';
+        iframe.classList.remove('cyber-map-iframe');
+        bSat.className = 'px-4 py-2.5 rounded-xl text-xs font-mono bg-emeraldNeon text-obsidian font-bold transition-all';
+        bCyber.className = 'px-4 py-2.5 rounded-xl text-xs font-mono glass-card text-gray-300 hover:text-white transition-all';
+      } else {
+        iframe.src = 'https://maps.google.com/maps?q=D%20Ground%20Peoples%20Colony%20No%201%20Faisalabad%20Pakistan&t=m&z=15&ie=UTF8&iwloc=&output=embed';
+        iframe.classList.add('cyber-map-iframe');
+        bCyber.className = 'px-4 py-2.5 rounded-xl text-xs font-mono bg-emeraldNeon text-obsidian font-bold transition-all';
+        bSat.className = 'px-4 py-2.5 rounded-xl text-xs font-mono glass-card text-gray-300 hover:text-white transition-all';
+      }
+    };
+
+    window.toggleServicePill = function(btn) {
+      const active = btn.classList.contains('text-emeraldNeon');
+      btn.className = active
+        ? 'service-pill px-4 py-2 rounded-xl text-xs font-mono border border-white/15 bg-white/5 text-gray-300'
+        : 'service-pill px-4 py-2 rounded-xl text-xs font-mono border border-emeraldNeon bg-emeraldNeon/20 text-emeraldNeon font-bold';
+      btn.textContent = (active ? '+ ' : '✓ ') + btn.dataset.service;
+    };
+
+    window.selectPresetPackage = function(pkg) {
+      document.getElementById('client-notes').value = 'Interested in: ' + pkg;
+    };
+
+    window.sendToWhatsApp = function(e) {
+      e.preventDefault();
+      const name = document.getElementById('client-name').value.trim();
+      const city = document.getElementById('client-city').value.trim();
+      const budget = document.getElementById('client-budget').value;
+      const notes = document.getElementById('client-notes').value.trim();
+      const services = [];
+      document.querySelectorAll('.service-pill.text-emeraldNeon').forEach(b => services.push(b.dataset.service));
+
+      const msg = `*New Project Inquiry — GrowPixel Digital*%0A%0A` +
+        `*Name:* ${encodeURIComponent(name)}%0A` +
+        `*Business & City:* ${encodeURIComponent(city)}%0A` +
+        `*Services:* ${encodeURIComponent(services.join(', ') || 'Consultation')}%0A` +
+        `*Budget:* ${encodeURIComponent(budget)}%0A` +
+        `*Notes:* ${encodeURIComponent(notes || 'N/A')}`;
+
+      window.open(`https://wa.me/923157523498?text=${msg}`, '_blank');
+    };
+  </script>
+</body>
+</html>
